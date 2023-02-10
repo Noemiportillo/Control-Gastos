@@ -18,7 +18,7 @@ const Modal = ( {setModal, animarModal, setAnimarModal, guardarGasto, editar, se
             setCategoria(editar.categoria)
             setId(editar.id)
       }
-    }, []);
+    }, [editar]);
 
     const ocultarModal = () => {
        setAnimarModal(false)
