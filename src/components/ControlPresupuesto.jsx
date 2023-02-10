@@ -21,7 +21,7 @@ const ControlPresupuesto = ( {gastos, setGastos, presupuesto, setPresupuesto, se
         setTimeout(() => {
             setPorcentaje(nuevoPorcentaje)
         }, 1500);        
-     }, [gastos])
+     }, [gastos, presupuesto])
 
     const formatearCantidad = (cantidad) => {
         return cantidad.toLocaleString('es-ES', {
